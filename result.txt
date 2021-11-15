@@ -1,0 +1,42 @@
+===Database result
+
+== Table structure for table admin
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|varchar(255)|Yes|NULL
+|password|varchar(255)|Yes|NULL
+== Dumping data for table admin
+
+== Table structure for table marks
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|paper1|int(11)|Yes|NULL
+|paper2|int(11)|Yes|NULL
+|paper3|int(11)|Yes|NULL
+|paper4|int(11)|Yes|NULL
+|paper5|int(11)|Yes|NULL
+|paper6|int(11)|Yes|NULL
+|student_roll|int(11)|Yes|NULL
+|total|int(11)|Yes|NULL
+|percentage|float|Yes|NULL
+|created_at|datetime|Yes|NULL
+|modified_at|datetime|Yes|NULL
+== Dumping data for table marks
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|varchar(255)|No|
+|roll_no|int(11)|No|
+|year|varchar(255)|Yes|NULL
+== Dumping data for table students
+
