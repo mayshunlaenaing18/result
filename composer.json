@@ -1,0 +1,16 @@
+{
+    "name": "two/result",
+    "authors": [
+        {
+            "name": "ThetSuSuKyaw",
+            "email": "thetsusukyaw981@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4" : {
+            "Database\\" : "database/",
+            "Helpers\\" : "Helpers/"
+        }
+    }
+}

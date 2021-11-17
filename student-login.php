@@ -9,13 +9,16 @@
 </head>
 <body>
 	<h1 class="h2 text-center mt-0.5 pt-3 mb-5" style="text-align: center;">Student</h1>
-	<form id="student" class="bg-dark" action="login-check.php">
+	<form id="student" class="bg-dark" action="login-check.php" method="post">
 		<div class="form-group">
 			<label for="student">Student Login</label><br><br>
-			<select class="form-select" required>
+			<select class="form-select" name="year" required>
 				<option value="0" selected>Select Year</option>
-				<option value="1">First Year</option>
-				<option value="2">Second Year</option>
+				<option value="1st yr">First Year</option>
+				<option value="2nd yr">Second Year</option>
+				<option value="3rd yr">Third Year</option>
+				<option value="4th yr">Fourth Year</option>
+				<option value="5th yr">Fifth Year</option>
 			</select><br>
 			<input type="text" name="roll" class="form-control" placeholder="Roll No" required><br>
 			<button class="btn btn-sm btn-outline-light" style="text-align: left;">Login</button>

@@ -15,7 +15,7 @@
 		<li><a href="index.php">Home</a></li>
 		<li><a href="#">Admin Login</a></li>
 		<li><a href="student-login.php">Student Login</a></li>
-		<li><a href="#">Contact Us</a></li>
+		<li><a href="contact.php">Contact Us
 	</ul>
 
 	<img src="images/act1.jpg" width="800" height="600" style="display: block;margin:150px auto 50px auto" class="rounded">
