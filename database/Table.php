@@ -24,7 +24,7 @@ class Table{
 			':roll' => $roll
 		]);
 		$row = $statement->fetch();
-		return $row;
+		return $row?? false;
 	}
 
 	public function studentMarks($roll){

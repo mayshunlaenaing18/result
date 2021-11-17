@@ -9,6 +9,11 @@
 </head>
 <body>
 	<h1 class="h2 text-center mt-0.5 pt-3 mb-5" style="text-align: center;">Student</h1>
+	<div class="container" style="text-align: center;">
+	<?php if(isset($_GET['error'])):?>
+		<div class="alert alert-warning text-danger" id="warning">Please try again!</div>
+	<?php endif; ?>
+	</div>
 	<form id="student" class="bg-dark" action="login-check.php" method="post">
 		<div class="form-group">
 			<label for="student">Student Login</label><br><br>
