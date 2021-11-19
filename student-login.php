@@ -14,7 +14,7 @@
 		<div class="alert alert-warning text-danger" id="warning">Please try again!</div>
 	<?php endif; ?>
 	</div>
-	<form id="student" class="bg-dark" action="login-check.php" method="post">
+	<form id="student" class="bg-dark" action="login_check.php" method="post">
 		<div class="form-group">
 			<label for="student">Student Login</label><br><br>
 			<select class="form-select" name="year" required>

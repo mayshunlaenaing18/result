@@ -4,7 +4,7 @@
     use Database\Table;
 
     $table = new Table(new MySQL());
-    $rows = $table->getAllStudents();
+    $rows = $table->getAllMarks();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +16,17 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Dashboard</title>
     <style>
+        body{
+            background-image: linear-gradient(90deg, #701cc9, #440c66);
+        }
+
         h3{
             margin-top: 100px;
             text-align: center;
         }
         #content{
             text-align: center;
-            width: 70%;
+            width: 90%;
             margin: 10px auto;
         }
         table{
@@ -44,12 +48,8 @@
         button:hover{
             background: gray;
         }
-
-        body{
-            background-image: linear-gradient(90deg, #701cc9, #440c66);
-        }
-
         /*navbar*/
+
         .dropbtn:hover{
             background: #000;
         }
@@ -96,23 +96,33 @@
             </li>
         </ul>
     </div>
-    <h3>Manage Students</h3>
+    <h3>Students' Results</h3>
     <div id="content">
         <table>
         <tr>
             <th>NAME</th>
             <th>ROLL NO</th>
-            <th>CLASS</th>
-            <th>ACTIONS</th>
+            <th>PAPER 1</th>
+            <th>PAPER 2</th>
+            <th>PAPER 3</th>
+            <th>PAPER 4</th>
+            <th>PAPER 5</th>
+            <th>PAPER 6</th>
+            <th>TOTAL</th>
+            <th>PERCENTAGE</th>
         </tr>
         <?php foreach($rows as $row ): ?>
             <tr>
             <td><?= $row->name?></td>
             <td><?= $row->roll_no ?></td>
-            <td><?= $row->year ?></td>
-            <td><a href="edit_student.php?id=<?= $row->id?>"><button>Edit</button></a>
-                <a href="delete_student.php?id=<?= $row->id?>"><button>Delete</button></a>
-            </td>
+            <td><?= $row->paper1 ?></td>
+            <td><?= $row->paper2 ?></td>
+            <td><?= $row->paper3 ?></td>
+            <td><?= $row->paper4 ?></td>
+            <td><?= $row->paper5 ?></td>
+            <td><?= $row->paper6 ?></td>
+            <td><?= $row->total ?></td>
+            <td><?= $row->percentage ?>%</td>
             </tr>
         <?php endforeach; ?>
     </table>

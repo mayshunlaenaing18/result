@@ -18,7 +18,7 @@
 		<li><a href="contact.php">Contact Us
 	</ul>
 
-	<img src="images/act1.jpg" width="800" height="600" style="display: block;margin:150px auto 50px auto" class="rounded">
+	<img src="images/act1.jpg" width="800" height="600" style="display: block;margin:150px auto 50px auto;border: 3px solid #000;border-radius: 20px;box-shadow: 5px 5px 5px #222;" class="rounded">
 
 	<div id="sub">
 		<div id="sub1" class="layout" style="color: #000;background: #ca10e3;width: 23%;border: 1px solid black;margin-left: 90px;border-radius: 10px;float: left;margin-bottom: 20px;height: 145px;font-size: 16px;padding: 10px;">

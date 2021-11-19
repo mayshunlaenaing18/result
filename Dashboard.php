@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
    
     <title>Dashboard</title>
-   
+    <style type="text/css">
+        body{
+            background-image: linear-gradient(90deg, #701cc9, #440c66);
+        }
+
+        /*navbar*/
+
+        .dropbtn:hover{
+            background: #000;
+        }
+
+        .dropdown-content{
+            border-radius: 10px;
+            background: #000;
+        }
+
+        .dropdown-content a:hover{
+            background: gray;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
         
@@ -22,7 +42,7 @@
     <div class="nav">
         <ul>
             <li class="dropdown" onclick="toggleDisplay('2')">
-                <a href="#" class="dropbtn">Students &nbsp
+                <a href="#" class="dropbtn" style="border-radius: 10px;">Students &nbsp
                     <span class="fa fa-angle-down"></span>
                 </a>
                 <div class="dropdown-content" id="2">
@@ -31,10 +51,11 @@
                 </div>
             </li>
             <li class="dropdown" onclick="toggleDisplay('3')">
-                <a href="#" class="dropbtn">Results &nbsp;
+                <a href="#" class="dropbtn" style="border-radius: 10px;">Results &nbsp;
                     <span class="fa fa-angle-down"></span>
                 </a>
                 <div class="dropdown-content" id="3">
+                    <a href="show_all_results.php">Show Results</a>
                     <a href="add_results.php">Add Results</a>
                     <a href="manage_results.php">Manage Results</a>
                 </div>

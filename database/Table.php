@@ -60,6 +60,13 @@ class Table{
 		return $row;
 	}
 
+	public function getAllMarks(){
+		$sql = "SELECT * FROM students LEFT JOIN marks ON students.roll_no = marks.student_roll";
+		$statement = $this->db->query($sql);
+		$result = $statement->fetchAll();
+		return $result;
+	}
+
 	public function insertMsg($name, $email, $msg){
 		$sql = "INSERT INTO messages (name, email, msg) VALUES (:name, :email, :msg)";
 		$statement = $this->db->prepare($sql);

@@ -6,11 +6,10 @@
     $db = mysqli_select_db($conn,'result');   
     session_start();
 
-    if (isset($_POST["userid"],$_POST["password"]))
+    if (isset($_POST["name"],$_POST["password"]))
     {
-        $username=$_POST["userid"];
+        $username=$_POST["name"];
         $password=$_POST["password"];
-        $password = md5($_POST["password"]);
         $sql = "SELECT * FROM admin WHERE name='$username' and password = '$password'";
         $result=mysqli_query($conn,$sql);
         if($result) {
