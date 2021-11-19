@@ -1,0 +1,20 @@
+.my_form{
+  text-align: center;
+  background: blue;
+  border: 0px solid #000;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.input_text {
+  width: 200px;
+  height: 30px;
+}
+h4
+{
+  color: white;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: white;
+}

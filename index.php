@@ -13,7 +13,7 @@
 	<!-- navbar -->
 	<ul class="mb-5">
 		<li><a href="index.php">Home</a></li>
-		<li><a href="#">Admin Login</a></li>
+		<li><a href="login.php">Admin Login</a></li>
 		<li><a href="student-login.php">Student Login</a></li>
 		<li><a href="contact.php">Contact Us
 	</ul>

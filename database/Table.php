@@ -16,6 +16,29 @@ class Table{
 		return $statement->fetchAll();
 	}
 
+	public function deleteStudent($id){
+		$sql = "DELETE FROM students WHERE id = $id";
+		$statement = $this->db->query($sql);
+		return $statement->rowCount();
+	}
+
+	public function editStudent($id){
+		$sql = "SELECT * FROM students WHERE id = $id";
+		$statement = $this->db->query($sql);
+		return $statement->fetch();
+	}
+
+	public function updateStudent($id, $name, $roll, $year){
+		$sql = "UPDATE students SET name =:name, roll_no = :roll, year = :year WHERE id = $id";
+		$statement = $this->db->prepare($sql);
+		$statement->execute([
+			":name" => $name,
+			":roll" => $roll,
+			":year" => $year
+		]);
+		return $statement->rowCount();
+	}
+
 	public function getByRoll($year, $roll){
 		$sql = "SELECT * FROM students WHERE year = :year AND roll_no = :roll";
 		$statement = $this->db->prepare($sql);
